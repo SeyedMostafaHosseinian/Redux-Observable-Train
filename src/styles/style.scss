@@ -1,0 +1,29 @@
+.box {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#buy {
+    width: 120px;
+    height: 30px;
+    background-color: #5caf21;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: none;
+}
+#orders_display {
+    margin-inline-start: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(11, 64, 126);
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
