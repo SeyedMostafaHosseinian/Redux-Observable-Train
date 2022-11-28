@@ -9,12 +9,12 @@ const slice = createSlice({
     name:"shopping",
     initialState,
     reducers:  {
-        payProduct: (state,action:{type:string}) => {
+        payProduct: (state,action:{type:string , payload?:any}) => {
             state.pay = true
             state.sended = false
             
         },
-        sendProduct: (state,action:{type:string}) => {
+        sendProduct: (state,action:{type:string , payload?:any}) => {
             state.pay = false
             state.sended = true
             state.orders = state.orders + 1

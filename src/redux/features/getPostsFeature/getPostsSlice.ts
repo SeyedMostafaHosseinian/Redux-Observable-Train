@@ -2,11 +2,11 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState: {
     loading: boolean;
-    posts: string;
+    posts: Record<string, any>[];
     error: string;
 } = {
     loading: false,
-    posts: "",
+    posts: [],
     error: "",
 };
 const slice = createSlice({
@@ -16,7 +16,7 @@ const slice = createSlice({
         sendRequest: (state, action: { type: string }) => {
             state.loading = true;
         },
-        requestSuccess: (state, action: { type: string, payload: string }) => {
+        requestSuccess: (state, action: { type: string, payload:Record<string, any>[] }) => {
             state.loading = false;
             state.posts = action.payload;
         },

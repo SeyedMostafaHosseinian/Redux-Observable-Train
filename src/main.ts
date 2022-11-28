@@ -13,3 +13,9 @@ let orderResults = document.getElementById("orders_display") as HTMLElement;
 payButton.addEventListener("click", () => {
     store.dispatch(getPostsFeature.actions.sendRequest())
 });
+store.subscribe(() => {
+    
+})
+
+
+
